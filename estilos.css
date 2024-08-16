@@ -1,0 +1,89 @@
+@import url(more.svg);
+@import url(search.svg);
+@import url(sms.svg);
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(66, 255, 4);
+    
+}
+
+
+
+.container{
+    max-width: 450px;
+    height: 100vh;
+    border: solid 1px rgb(255, 255, 255);
+    margin: 0 auto;
+    border-radius: 15px;
+
+    background-color: rgb(255, 255, 255);
+
+}
+header{
+    border: solid 1px rgb(0, 0, 0);
+    width: 450px;
+    height: 125px;
+    background-color: rgba(4, 255, 0, 0.757);
+    border-radius: 10px;
+}
+
+
+.titulo{
+    margin-right: 0;
+    color: rgb(255, 251, 251);
+    font-size: 20px;
+    
+}
+
+
+.incon1{
+ display: flex; 
+ justify-content: end;
+ 
+   
+}
+
+
+
+.item li{
+    
+    margin-bottom: 20px;
+    list-style: none;
+    display: inline-flex;
+    padding: 10px;
+    
+
+
+}
+.item a{
+    color: #ffffff;
+   display: inline-flex;
+    text-decoration: none;
+   padding: 10px;
+   margin-left: 50px;
+   margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.chat-contenido{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    display: inline-block;
+}
+.chat-hora{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: end;
+}
+.img{
+ width: 60px;
+ height: 60px;
+ border-radius: 100px;
+}
+
