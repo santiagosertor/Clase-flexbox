@@ -3,89 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WhatsApp Interface</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <main>
-        <div>
-            <section class="container">
-                <header>
-                    <div class="titulo">
-                        <h1>WhatsAPP</h1>
-                    </div>
-                   
-                    <div class="incon1">
-                        <a href="#"><img src="iconos.svg/search.svg" alt="incon1"></a>
-                        <a href="#"><img src="iconos.svg/sms.svg" alt="incon1"></a>
-                        <a href="#"><img src="iconos.svg/more.svg"></a>
-                    </div>
-                    <div class="nav2">
-                        <nav class="nav-links">
-                           <ul class="item">
-                               <li>
-                                   <a href="chat">Chat</a>
-                                   <a href="chat">Estados</a>
-                                  <a href="chat">Llamada</a>
-                               </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </header>
-                <div class="chat--items">
-                    <img src="imagenes/Avatar.png" alt="" class="img">
-                    <div class="chat-contenido">
-                        <div class="chat-name">Amigo</div>
-                        <div class="chat-mensaje">hola bro podemos conversar</div>
-                    </div>
-                    <div class="chat-hora">10:20 pm</div>
-                    <hr>
-                    <div class="chat--items">
-                        <img src="imagenes/Avatar.png" alt="" class="img">
-                        <div class="chat-contenido">
-                            <div class="chat-name">Madre</div>
-                            <div class="chat-mensaje">hola hijo como vas</div>
-                        </div>
-                        <div class="chat-hora">9:00 am</div>
-                        <hr>
-                        <div class="chat--items">
-                            <img src="imagenes/Avatar.png" alt="" class="img">
-                            <div class="chat-contenido">
-                                <div class="chat-name">Padre</div>
-                                <div class="chat-mensaje">hola campeon recuerda comprar tu almuerzo</div>
-                            </div>
-                            <div class="chat-hora">11:00 am</div>
-                            <hr>
-                            <div class="chat--items">
-                                <img src="imagenes/Avatar.png" alt="" class="img">
-                                <div class="chat-contenido">
-                                    <div class="chat-name">Mi Amor</div>
-                                    <div class="chat-mensaje">hola bb como vas</div>
-                                </div>
-                                <div class="chat-hora">7:00 am</div>
-                                <hr>
-                                <div class="chat--items">
-                                    <img src="imagenes/Avatar.png" alt="" class="img">
-                                    <div class="chat-contenido">
-                                        <div class="chat-name">Wilson</div>
-                                        <div class="chat-mensaje">hola bro podemos jugar</div>
-                                    </div>
-                                    <div class="chat-hora"> 4:00 pm</div>
-                                    <hr>
-                                    <div class="chat--items">
-                                        <img src="imagenes/Avatar.png" alt="" class="img">
-                                        <div class="chat-contenido">
-                                            <div class="chat-name">Hermano</div>
-                                            <div class="chat-mensaje">hermano pagame mi monedas</div>
-                                        </div>
-                                        <div class="chat-hora">8:00 pm</div>
-                                        <hr>
-                                    
-        
-                </div>
-            </section>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-title">WhatsApp</div>
+            <div class="header-icons">
+                <img src="iconos.svg/search.svg" alt="">
+                <img src="iconos.svg/more.svg" alt="">
+            </div>
         </div>
-    </main>
-    
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <label class="tab" for="chats-tab">
+                CHATS
+                <span class="unread-count">5</span> <!-- Aquí va el contador de mensajes -->
+            </label>
+            <label class="tab" for="status-tab">ESTADOS</label>
+            <label class="tab" for="calls-tab">LLAMADAS</label>
+        </div>
+
+        <!-- Tabs de contenido -->
+        <input type="radio" id="chats-tab" name="tab" checked>
+        <div class="tab-content" id="chats-content">
+            <!-- Ejemplo de chats -->
+            <div class="chat-entry">
+                <img src="imagenes/foto boy.jpg" alt="Foto Contacto" class="chat-img">
+                <div class="chat-text">
+                    <strong>Carlos</strong>
+                    <p>Carlos: bro donde estas vamos a salir a tomar</p>
+                </div>
+                <div class="chat-time">
+                    6:00 
+                    <span class="unread-dot"></span> <!-- Indicador de mensaje no leído -->
+                </div>
+            </div>
+            <div class="chat-entry">
+                <img src="imagenes/foto girl.jpg" alt="Foto Contacto" class="chat-img">
+                <div class="chat-text">
+                    <strong>Sofia</strong>
+                    <p>Sofía: donde estabas te estoy esperado casi 1 hora</p>
+                </div>
+                <div class="chat-time"> 
+                    8:00
+                    <span class="unread-dot"></span> <!-- Indicador de mensaje no leído -->
+                 </div>
+            </div>
+            <div class="chat-entry">
+                <img src="imagenes/foto boy2.webp" alt="Foto Contacto" class="chat-img">
+                <div class="chat-text">
+                    <strong>Juan (Hermano)</strong>
+                    <p>Juan: hermano disfrutaste la cena que le dimos a nuestros padres</p>
+                </div>
+                <div class="chat-time">
+                    10:00
+                    <span class="unread-dot"></span> <!-- Indicador de mensaje no leído -->
+                 </div>
+            </div>
+            <div class="chat-entry">
+                <img src="imagenes/foto boy3.jpg" alt="Foto Contacto" class="chat-img">
+                <div class="chat-text">
+                    <strong>Padre</strong>
+                    <p>Padre: hijo estuvo exelente la cena te lusiste con los detalles</p>
+                </div>
+                <div class="chat-time">
+                    10:10 
+                    <span class="unread-dot"></span> <!-- Indicador de mensaje no leído -->
+                </div>
+            </div>
+            <div class="chat-entry">
+                <img src="imagenes/foto girl2.jpg" alt="Foto Contacto" class="chat-img">
+                <div class="chat-text">
+                    <strong>Madre</strong>
+                    <p>Madre: Gracias por la salida y la cena hijo bello te amo infinito besos bendiciones</p>
+                </div>
+                <div class="chat-time">
+                    7:00 
+                    <span class="unread-dot"></span> <!-- Indicador de mensaje no leído -->
+                </div>
+            </div>
+            <div class="chat-entry">
+                <img src="imagenes/foto girl3.webp" alt="Foto Contacto" class="chat-img">
+                <div class="chat-text">
+                    <strong>Hermana</strong>
+                    <p>Hermana: Hermano se lucuieron con esa salida a nuestros padres despues acomodamos el gasto</p>
+                </div>
+                <div class="chat-time">
+                    9:49 
+                </div>
+            </div>
+            <div class="chat-entry">
+                <img src="imagenes/foto.jpg" alt="Foto Contacto" class="chat-img">
+                <div class="chat-text">
+                    <strong>Tienda</strong>
+                    <p>Yo: vecino encargueme ese pedido para ahorita en 10 minutos</p>
+                </div>
+                <div class="chat-time">
+                    10:00
+                </div>
+            </div>
+            <!-- Más chats aquí -->
+
+         <!-- Fab Acccion Button -->
+        <div class="fab">+</div>
+        </div>
+
+        <input type="radio" id="status-tab" name="tab">
+        <div class="tab-content" id="status-content">
+            <!-- Ejemplo de estados -->
+            <div class="status-entry">
+                <img src="imagenes/meme1.jpg" alt="Mi Estado" class="status-img">
+                <div class="status-text">
+                    <strong>Mi estado</strong>
+                    <p>Vistas por 7</p>
+                </div>
+                <div class="header-icons">
+                    <img src="iconos.svg/more_vert_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+            <div class="status-entry">
+                <img src="imagenes/meme2.jpg" alt="Mi Estado" class="status-img">
+                <div class="status-text">
+                    <strong>Mi estado</strong>
+                    <p>Vistas por 7</p> 
+                </div>
+                <div class="header-icons">
+                    <img src="iconos.svg/more_vert_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+            <div class="status-entry">
+                <img src="imagenes/meme3.webp" alt="Mi Estado" class="status-img">
+                <div class="status-text">
+                    <strong>Mi estado</strong>
+                    <p>Vistas por 6</p>
+                </div>
+                <div class="header-icons">
+                    <img src="iconos.svg/more_vert_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+            <div class="status-entry">
+                <img src="imagenes/meme5.webp" alt="Mi Estado" class="status-img">
+                <div class="status-text">
+                    <strong>Mi estado</strong>
+                    <p>Vistas por 6</p>
+                </div>
+                <div class="header-icons">
+                    <img src="iconos.svg/more_vert_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+            <div class="status-entry">
+                <img src="imagenes/meme6.jpg" alt="Mi Estado" class="status-img">
+                <div class="status-text">
+                    <strong>Mi estado</strong>
+                    <p>Vistas por 5</p>
+                </div>
+                <div class="header-icons">
+                    <img src="iconos.svg/more_vert_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+            <div class="status-entry">
+                <img src="imagenes/meme7.jpeg" alt="Mi Estado" class="status-img">
+                <div class="status-text">
+                    <strong>Mi estado</strong>
+                    <p>Vistas por 5</p>
+                </div>
+                <div class="header-icons">
+                    <img src="iconos.svg/more_vert_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+            <div class="status-entry">
+                <img src="imagenes/meme8.jpg" alt="Mi Estado" class="status-img">
+                <div class="status-text">
+                    <strong>Mi estado</strong>
+                    <p>Vistas por 2</p>
+                </div>
+                <div class="header-icons">
+                    <img src="iconos.svg/more_vert_26dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+            <!-- Más estados aquí -->
+
+             <!-- Fab Acccion Button -->
+            <div class="fab">
+                <img src="iconos.svg/photo_camera_28dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="" srcset="">
+            </div>
+        </div>
+
+        <input type="radio" id="calls-tab" name="tab">
+        <div class="tab-content" id="calls-content">
+            <!-- Ejemplo de llamadas -->
+            <div class="call-entry">
+                <img src="imagenes/foto boy.jpg" alt="Foto Contacto" class="call-img">
+                <div class="call-text">
+                    <strong>Carlos</strong>
+                    <p>Ayer, 6:20 PM</p>
+                </div>
+                <span class="call-icon">
+                    <img src="iconos.svg/call_29dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+            </div>
+            <div class="call-entry">
+                <img src="imagenes/foto girl3.webp" alt="Foto Contacto" class="call-img">
+                <div class="call-text">
+                    <strong>Hermana</strong>
+                    <p>Hoy, 2:00 PM</p>
+                </div>
+                <span class="call-icon">
+                    <img src="iconos.svg/call_29dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+            </div>
+            <div class="call-entry">
+                <img src="imagenes/foto boy2.webp" alt="Foto Contacto" class="call-img">
+                <div class="call-text">
+                    <strong>Juan (Hermano)</strong>
+                    <p>Hoy, 9:00 AM</p>
+                </div>
+                <span class="call-icon">
+                    <img src="iconos.svg/call_29dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+            </div>
+            <div class="call-entry">
+                <img src="imagenes/foto boy3.jpg" alt="Foto Contacto" class="call-img">
+                <div class="call-text">
+                    <strong>Padre</strong>
+                    <p>Hoy, 11:20 AM</p>
+                </div>
+                <span class="call-icon">
+                    <img src="iconos.svg/call_29dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+            </div>
+            <div class="call-entry">
+                <img src="imagenes/foto girl2.jpg" alt="Foto Contacto" class="call-img">
+                <div class="call-text">
+                    <strong>Madre</strong>
+                    <p>Hoy, 8:09 AM</p>
+                </div>
+                <span class="call-icon"><img src="iconos.svg/call_29dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+            </div>
+            <div class="call-entry">
+                <img src="imagenes/foto girl.jpg" alt="Foto Contacto" class="call-img">
+                <div class="call-text">
+                    <strong>Sofia</strong>
+                    <p>Ayer, 9:45 PM</p>
+                </div>
+                <span class="call-icon">
+                    <img src="iconos.svg/call_29dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+            </div>
+            <div class="call-entry">
+                <img src="imagenes/foto.jpg" alt="Foto Contacto" class="call-img">
+                <div class="call-text">
+                    <strong>Tienda</strong>
+                    <p>Ayer, 1:00 PM</p>
+                </div>
+                <span class="call-icon">
+                    <img src="iconos.svg/call_29dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </span>
+            </div>
+            <!-- Más llamadas aquí -->
+
+            <!-- Fab Acccion Button -->
+            <div class="fab">
+                <img src="iconos.svg/add_call_28dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+        </div>
+
+
+    </div>
 </body>
 </html>
