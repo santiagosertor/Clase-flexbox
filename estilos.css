@@ -3,7 +3,7 @@
     --primary-color: #075E54;
     --secondary-color: #128C7E;
     --text-color: white;
-    --background-color: #f0f0f0;
+    --background-color: #ffffff;
     --tab-height: 50px;
     --header-height: 56px;
 }
@@ -19,7 +19,7 @@ body {
 .container {
     max-width: 450px;
     margin: 0 auto;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -116,7 +116,7 @@ input[type="radio"] {
 .tab-content {
     display: none;
     flex-grow: 1;
-    background-color: white;
+    background-color: rgba(255, 254, 254, 0.959);
     overflow-y: auto;
 }
 
@@ -129,7 +129,7 @@ input[type="radio"]:checked + .tab-content {
     display: flex;
     align-items: center;
     padding: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ffffff;
     cursor: pointer;
 }
 
@@ -170,6 +170,175 @@ input[type="radio"]:checked + .tab-content {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
+.fab2{
+    position: absolute;
+    left: 60.5%;
+    bottom: 20px;
+    top: 79%;
+    width: 45px;
+    height: 45px;
+    background-color: var(gray);
+    color: rgb(8, 8, 8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+/* Container for the status image and icons */
+.status-img-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Status image */
+.status-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #ccc; /* Círculo gris alrededor de la imagen */
+}
+
+/* Icono de lápiz sobre la cámara */
+.edit-icon {
+    position: absolute;
+    bottom: -5px;
+    right: 5px;
+    width: 10px;
+    height: 15px;
+    background-color: rgb(5, 240, 83);
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Estilo para los estados ya vistos */
+.viewed .status-img {
+    border-color: #d3d3d3; /* Círculo gris más claro para estados vistos */
+}
+
+/* Section for viewed statuses */
+.status-viewed {
+    padding-top: 15px;
+}
+
+.status-viewed p {
+    margin: 0;
+    padding: 0 15px;
+    font-size: 12px;
+    color: #666;
+    font-weight: bold;
+}
+
+.status-viewed .status-entry {
+    margin-left: 15px;
+}
+
+.call-section {
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+
+.call-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.call-link-icon img {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border-radius: 50%;
+    transform: rotate(150deg);
+
+}
+
+.call-link-text {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.call-link-text p {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.call-time {
+    font-size: 12px;
+    color: #999;
+}
+
+.recent-title {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.call-entry {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e6d5f7; /* Fondo morado claro */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.call-img-container {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.call-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+
+.call-text {
+    flex-grow: 1;
+}
+
+.call-text p {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.call-icon {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.call-icon.green {
+    color: green;
+}
+
+.call-icon.red {
+    color: red;
+}
+
+.call-action img {
+    width: 24px;
+    height: 24px;
+}
+
+
 
 /* estilos de mobil */
 @media screen and (max-width: 450px) {
